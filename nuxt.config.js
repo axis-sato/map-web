@@ -10,7 +10,8 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: '//cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css' }
     ]
   },
   /*
@@ -21,7 +22,7 @@ module.exports = {
   ** Add axios globally
   */
   build: {
-    vendor: ['axios'],
+    vendor: ['axios', 'buefy'],
     /*
     ** Run ESLINT on save
     */
@@ -34,6 +35,15 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
+    },
+    // ref: https://github.com/nuxt/nuxt.js/issues/1670#issuecomment-330899099
+    postcss: {
+      plugins: {
+        'postcss-custom-properties': {
+          warnings: false
+        }
+      }
     }
-  }
+  },
+  plugins: ['~plugins/buefy']
 }
