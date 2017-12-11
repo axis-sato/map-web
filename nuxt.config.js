@@ -46,4 +46,5 @@ module.exports = {
     }
   },
   plugins: ['~plugins/buefy']
+  modules: ['@nuxtjs/dotenv']
 }

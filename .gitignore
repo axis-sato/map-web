@@ -13,4 +13,6 @@ dist
 # Backpack build
 build
 
+.env
+
 .idea
