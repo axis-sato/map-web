@@ -4,6 +4,12 @@
     <h1 class="title">
       USERS
     </h1>
+    <gmap-map
+      :center="{lat:10, lng:10}"
+      :zoom="7"
+      map-type-id="terrain"
+      style="width: 500px; height: 300px"
+    ></gmap-map>
     <ul class="users">
       <li v-for="(user, index) in users" :key="index" class="user">
         <nuxt-link :to="{ name: 'id', params: { id: index }}">

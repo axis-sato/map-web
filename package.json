@@ -21,7 +21,8 @@
     "source-map-support": "^0.4.15",
     "vue": "^2.5.9",
     "vue-server-renderer": "^2.5.9",
-    "vue-template-compiler": "^2.5.9"
+    "vue-template-compiler": "^2.5.9",
+    "vue2-google-maps": "^0.8.4"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",

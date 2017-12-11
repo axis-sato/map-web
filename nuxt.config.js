@@ -45,6 +45,6 @@ module.exports = {
       }
     }
   },
-  plugins: ['~plugins/buefy']
+  plugins: ['~plugins/buefy', '~plugins/vue_google_map'],
   modules: ['@nuxtjs/dotenv']
 }
